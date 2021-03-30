@@ -1,23 +1,30 @@
-let questionOne = {
+let qstn1 = {
   question: 'what?',
   answer: 'example',
-  correctAnswer: 'example'
+  correctAnswer: 'Its C'
 }
 
-let questionTwo = {
+let qstn2 = {
   question: 'when?',
   answer: 'example',
-  correctAnswer: 'example'
+  correctAnswer: 'Sorry its A'
 }
 
-let questionThree = {
+let qstn3 = {
   question: 'where?',
   answer: 'example',
-  correctAnswer: 'example'
+  correctAnswer: 'Yeah, again C'
 }
 
-let questionFour = {
+let qstn4 = {
   question: 'why?',
   answer: 'example',
-  correctAnswer: 'example'
+  correctAnswer: 'Nope'
 }
+
+
+let qstns = [qstn1, qstn2, qstn3, qstn4];
+
+let answrs = qstns.filter((item) => item.correctAnswer.includes('C'));
+
+console.log(answrs);
